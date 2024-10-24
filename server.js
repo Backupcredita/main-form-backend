@@ -5,7 +5,7 @@ const mysql = require('mysql2');
 
 // Initialize Express
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 19594;
 
 // Middleware
 app.use(cors());
@@ -14,10 +14,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // MySQL database connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'Host',
-    password: 'Creditafinance@123',  // Replace with your MySQL root password
-    database: 'inquiry_form'
+    host: 'mysql-loan-application-backupcredita-5ebc.g.aivencloud.com',
+    user: 'avnadmin',
+    password: 'AVNS_imXagB_IpbsjzLVeOfc',  // Replace with your MySQL root password
+    database: 'inquiry_form',
+    port:19594
 });
 
 // Connect to the database
@@ -61,5 +62,5 @@ app.post('/submit-inquiry', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server is running on port ${3000}`);
+    console.log(`Server is running on port ${19594}`);
 });
