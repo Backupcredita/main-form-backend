@@ -62,5 +62,5 @@ app.post('/submit-inquiry', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server is running on port ${19594}`);
+    console.log(`https://main-form-backend.onrender.com: ${19594}`);
 });
